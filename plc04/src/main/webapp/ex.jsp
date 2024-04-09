@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <title>練習4-1</title>
 </head>
-<body>
+<body style = "color:blue; font-size: 16px; font-family: meiryo;">
 <%for(int i = 0; i < 10; i++){ %>
 <%if (i % 3 == 0) {%>
 <p style ="color: red;">
