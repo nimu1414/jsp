@@ -1,0 +1,56 @@
+@charset "UTF-8";
+div{
+	text-align: center;
+	padding:0;
+	margin:0;
+}
+form{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width:100%;
+	color: #666;
+	padding:.7em;
+	margin: 2em 0;
+	border:1px solid #ccc;
+	/*↓背景グラデーションの指定*/
+	background: #f0f8f1; /*←グラデーション未対応のブラウザ用*/
+	background: -webkit-linear-gradient(top, #fbfcfc, #f0f8f1); /*←オールドブラウザ用*/
+	background: linear-gradient(#fbfcfc, #f0f8f1); /*←標準型*/
+}
+.text{
+	width:15%;
+	padding:3px 5px;
+	margin:0;
+	color:#666;
+	border: solid 1px #ccc;
+	box-shadow: 2px 3px 5px -2px #ddd inset;/*テキストエリア内にシャドウ*/
+	background: #fff;/*内側のシャドウはbackgroundの初期化が必要*/
+	border-radius:6px;
+}
+/* ここから追記部分 */
+label {
+   width: 17em;
+	margin:0 .5em 0 0;
+	display:inline-block;
+	vertical-align:top;
+}
+input[type="submit"]{
+	margin-left : 0 auto;
+	margin-right : 0 auto;
+	cursor:pointer;  /*←カーソルを指先型に変化*/
+	font-size:150%;
+	font-weight:bold;
+	width:150px;
+	padding:5px 0;
+	margin:.5em .5em .5em 0;
+	border-style:none;
+	color: #fff;
+	/*↓背景グラデーションの指定*/
+	background:#90e733; /*←グラデーション未対応のブラウザ用*/
+	background: -webkit-linear-gradient(top, #90e733, #428000 50%, #90e733) #90e733;
+	background: linear-gradient(#90e733, #428000 50%, #90e733) #90e733;
+	/*↓以下、ボックスの角丸、シャドウ、テキストシャドウの指定*/
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px 1px #666;
+	text-shadow: 1px 1px 2px #000;
+}
